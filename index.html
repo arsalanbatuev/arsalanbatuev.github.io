@@ -1,0 +1,496 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Arsalan Batuev - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    /* ABOUT ME */
+    .about-me {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      background: #f7f7f7;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .about-text h2 {
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .about-text ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    .profile-container {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-pic {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* EDUCATION */
+    #education {
+      margin: 3rem 0;
+    }
+    #education h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+    .education-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .edu-column {
+      flex: 1;
+      min-width: 300px;
+    }
+    .edu-column h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      text-decoration: underline;
+    }
+    .edu-column p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .edu-column ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* PLANIT FEATURED PROJECT */
+    #planit-project .planit-images {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    #planit-project .planit-images img {
+      width: 45%;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    /* PROJECTS (Key Features, Technologies) */
+    section.posts article p {
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+    .features-list, .tech-list {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-heading, .tech-heading {
+      margin-top: 1rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    /* DOCUMENTS (Stacked & Centered) */
+    .documents-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .pdf-preview {
+      margin: 2rem 0;
+      display: block;
+      text-align: center;
+    }
+    .pdf-preview h3 {
+      margin-bottom: 1rem;
+    }
+    .pdf-preview iframe {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 800px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+    }
+
+    /* FOOTER: Social/Contact */
+    #contact-info {
+      padding: 2rem;
+      text-align: center;
+    }
+    #contact-info h2 {
+      margin-bottom: 1rem;
+      color: #c1c1c1;
+    }
+    .social-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .social-links a {
+      display: inline-block;
+      text-decoration: none;
+      color: #c1c1c1;
+      font-weight: bold;
+      border: 1px solid #666;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .social-links a:hover {
+      background: #666;
+      color: #fff;
+    }
+    .contact-details {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #c1c1c1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+
+    <!-- Intro -->
+    <div id="intro">
+      <h1>Hi, my name is<br />Arsalan Batuev</h1>
+      <ul class="actions">
+        <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+      <!-- ABOUT ME SECTION -->
+      <section class="about-me">
+        <div class="about-text">
+          <h2>Arsalan Batuev</h2>
+          <p>
+            <br/><br/>
+            I am a <strong>Data Analyst</strong> and <strong>Software Developer</strong>
+            with a strong mathematical foundation and expertise in data-driven problem-solving.<br /><br />
+            My background in <em>Mechanics and Mathematical Modeling</em> at <strong>Novosibirsk State University (NSU)</strong>
+            sharpened my approach to computational modeling and critical thinking.<br /><br />
+            Currently, I’m studying <em>Computer Programming and Analysis</em> at George Brown College, focusing on
+            <strong>data analytics</strong>, <strong>full-stack development</strong>, and modern frameworks for both web and mobile apps.<br /><br />
+            Proficient in <strong>Python</strong> (Flask, Django, data science libraries) and <strong>JavaScript</strong> (Node.js, React, Express),
+            I love integrating <strong>math</strong> and <strong>tech</strong> to craft solutions that deliver insights and streamline processes.
+            <br/><br/>
+            <br/><br/>
+          </p>
+          <h3>Core Skills:</h3>
+          <ul>
+            <li>Python (Flask, Django, Pandas, NumPy)</li>
+            <li>JavaScript (Node.js, React.js, Express.js)</li>
+            <li>SQL &amp; NoSQL (MySQL, PostgreSQL, MongoDB)</li>
+            <li>API Development &amp; Integration</li>
+            <li>Mathematical Modeling &amp; Data Analysis</li>
+            <li>HTML, CSS, JS for Frontend</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-wrapper">
+          <!-- NSU Info -->
+          <div class="edu-column">
+            <h3>Novosibirsk State University</h3>
+            <p><strong>Novosibirsk, Russia<br/><br/></strong></p>
+            <p><strong>Mechanics &amp; Mathematical Modeling</strong></p>
+            <p>
+              Developed a strong foundation in advanced mathematics, computational modeling,
+              and real-world problem-solving. My coursework covered <em>advanced calculus</em>,
+              <em>partial differential equations</em>, and <em>applied simulations</em>,
+              preparing me to handle complex technical challenges with precision and innovation.
+            </p>
+            <ul>
+              <li>Scientific Computing &amp; Numerical Methods</li>
+              <li>High-Level Math (Fourier Analysis, Linear Algebra)</li>
+              <li>Research-Based Projects in Theoretical &amp; Applied Physics</li>
+              <li>Team-Based Studies in Mathematical &amp; Engineering Applications</li>
+            </ul>
+            <p>
+              These experiences honed my analytical mindset and deepened my ability to design, evaluate,
+              and optimize computational solutions for diverse scenarios, from physics simulations
+              to large-scale data analysis.
+            </p>
+          </div>
+          <!-- GBC Info -->
+          <div class="edu-column">
+            <h3>George Brown College</h3>
+            <p><strong>Toronto, Canada<br/><br/></strong></p>
+            <p><strong>Computer Programming &amp; Analysis – Advanced Diploma</strong></p>
+            <p>
+              Specialized in software engineering, data analytics, and system architecture,
+              working extensively with .NET, Python, and Java for scalable, efficient solutions.
+            </p>
+            <ul>
+              <li>Database Design, Administration &amp; Architecture</li>
+              <li>IT Networking &amp; Operating Systems</li>
+              <li>Data Science, Machine Learning &amp; AI</li>
+              <li>Mobile &amp; Web Application Development</li>
+            </ul>
+            <p>
+              I also developed hands-on experience in DevOps (AWS, Azure, Docker, CI/CD)
+              and agile teamwork—skills that help me design, build, and deploy modern software solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECT: PlanIt -->
+      <article class="post featured" id="planit-project">
+        <header class="major">
+          <span class="date"><em>Featured Project:</em></span>
+          <h2><a href="#">PlanIt</a></h2>
+          <p>
+            A streamlined platform that helps teams coordinate events, manage tasks, and hit deadlines on time.
+          </p>
+        </header>
+        <p>
+          PlanIt centralizes calendars, notifications, and event details, ensuring every member has
+          quick access to schedules and updates. By combining a minimal, intuitive interface with powerful
+          collaboration features, PlanIt reduces confusion and encourages productivity. Ideal for small
+          study groups or large organizational teams, PlanIt keeps everyone aligned in one convenient hub.
+          <br/><br/>
+        </p>
+        <h3 class="feature-heading">Key Features:</h3>
+        <ul class="features-list">
+          <li>Unified dashboard with upcoming events and quick access shortcuts</li>
+          <li>Real-time notifications for newly added or updated tasks</li>
+          <li>Simple event creation and participant management</li>
+          <li>Built-in chat or messaging to keep conversations centralized</li>
+        </ul>
+        <h3 class="tech-heading">Technologies:</h3>
+        <ul class="tech-list">
+          <li>React.js for front-end UI</li>
+          <li>Node.js &amp; Express for back-end API</li>
+          <li>MongoDB for data storage</li>
+          <li>Deployed via AWS for scalability</li>
+        </ul>
+        <div class="planit-images">
+          <img src="images/planit_dashboard.png" alt="PlanIt Dashboard" />
+          <img src="images/planit_landing.png" alt="PlanIt Landing Page" />
+        </div>
+      </article>
+
+      <!-- PROJECTS HEADING -->
+      <article class="post featured" id="planit-project">
+        <header class="major">
+          <span class="date"><em>Projects:</em></span>
+        </header>
+      </article>
+
+      <!-- Additional Projects -->
+      <section class="posts">
+        <!-- Data Analytics Dashboard -->
+        <article>
+          <header>
+            <h2>Data Analytics Dashboard</h2>
+          </header>
+          <a class="image fit">
+            <img src="images/gbc_dashboard.png" alt="Data Analytics Dashboard" />
+          </a>
+          <p>
+            A web solution that lets users upload datasets, run transformations in <strong>Flask</strong> via <strong>Pandas</strong>,
+            and visualize metrics with <strong>Plotly</strong>. Ideal for professionals seeking real-time data insights without
+            complex setups or manual processes.
+            <br/><br/>
+          </p>
+          <h3 class="feature-heading">Key Features:</h3>
+          <ul class="features-list">
+            <li>CSV/Excel file uploads for on-the-fly analysis</li>
+            <li>Interactive charts for deeper data exploration</li>
+            <li>RESTful APIs for consistent data queries</li>
+          </ul>
+          <h3 class="tech-heading">Technologies:</h3>
+          <ul class="tech-list">
+            <li>Python (Flask, Pandas)</li>
+            <li>Plotly.js</li>
+            <li>HTML/CSS/JavaScript</li>
+          </ul>
+        </article>
+
+        <!-- Restaurant Finder -->
+        <article>
+          <header>
+            <h2>Restaurant Finder</h2>
+          </header>
+          <a class="image fit">
+            <img src="images/gbc_restaurant.png" alt="Restaurant Finder" />
+          </a>
+          <p>
+            A full-stack app that connects diners with top-rated restaurants. The <strong>React.js</strong> frontend
+            delivers a seamless user experience, while <strong>Node.js/Express</strong> handles data flow and authentication.
+            Users can save favorites, browse reviews, and share their culinary discoveries.
+            <br/><br/>
+          </p>
+          <h3 class="feature-heading">Key Features:</h3>
+          <ul class="features-list">
+            <li>Location-based search with dynamic filtering</li>
+            <li>User account system for storing favorites</li>
+            <li>Responsive design optimized for mobile</li>
+          </ul>
+          <h3 class="tech-heading">Technologies:</h3>
+          <ul class="tech-list">
+            <li>React.js</li>
+            <li>Node.js, Express.js</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+
+        <!-- Travel Booking -->
+        <article>
+          <header>
+            <h2>Travel Booking</h2>
+          </header>
+          <a class="image fit">
+            <img src="images/gbc_travel.png" alt="Travel Booking" />
+          </a>
+          <p>
+            A consolidated platform for finding and booking flights, hotels, and rental cars. Integrates
+            multiple travel APIs within <strong>Node.js</strong>, allowing users to compare prices, manage
+            itineraries, and handle reservations seamlessly.
+            <br/><br/>
+          </p>
+          <h3 class="feature-heading">Key Features:</h3>
+          <ul class="features-list">
+            <li>Search engine for flights/hotels across multiple providers</li>
+            <li>Real-time price comparison and booking availability</li>
+            <li>Trip summaries stored in user accounts</li>
+          </ul>
+          <h3 class="tech-heading">Technologies:</h3>
+          <ul class="tech-list">
+            <li>JavaScript, Node.js</li>
+            <li>External Travel APIs</li>
+            <li>SQL Database</li>
+          </ul>
+        </article>
+
+        <!-- Chess Game -->
+        <article>
+          <header>
+            <h2>Chess Game</h2>
+          </header>
+          <a class="image fit">
+            <img src="images/chess_game.png" alt="Chess Game" />
+          </a>
+          <p>
+            A lightweight, browser-based chess engine using <strong>JavaScript</strong> and HTML5 Canvas.
+            Features intuitive piece dragging, move validation, and a stylish board layout—perfect for
+            quick matches or illustrating game AI concepts.
+          </p>
+          <h3 class="feature-heading">Key Features:</h3>
+          <ul class="features-list">
+            <li>Drag-and-drop movement with collision detection</li>
+            <li>Move legality checks and turn-based logic</li>
+            <li>Modern interface with responsive scaling</li>
+          </ul>
+          <h3 class="tech-heading">Technologies:</h3>
+          <ul class="tech-list">
+            <li>JavaScript</li>
+            <li>HTML5 Canvas</li>
+            <li>CSS</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Documents (Stacked & Centered) -->
+      <section>
+        <header class="major">
+          <h2>My Documents</h2>
+          <p>View my resume, cover letter, and Dean's List award below.</p>
+        </header>
+        <div class="documents-container">
+          <div class="pdf-preview">
+            <h3>Resume</h3>
+            <iframe src="Resume_Arsalan.pdf"></iframe>
+          </div>
+          <div class="pdf-preview">
+            <h3>Cover Letter</h3>
+            <iframe src="Cover_Letter_Arsalan.pdf"></iframe>
+          </div>
+          <div class="pdf-preview">
+            <h3>Dean's Honour List</h3>
+            <iframe src="Dean_letter.pdf"></iframe>
+          </div>
+        </div>
+      </section>
+    </div><!-- /#main -->
+
+    <!-- FOOTER: Social/Contact -->
+    <footer id="contact-info">
+      <h2>Get in Touch</h2>
+      <p>
+        Feel free to reach out if you'd like to discuss a project, collaboration, or just say hello.
+        I'm available on various social platforms, or you can email me directly.
+      </p>
+      <div class="social-links">
+        <!-- Replace with your real links -->
+        <a href="mailto:arsalan.batuev13@gmail.com">Email Me</a>
+        <a href="https://github.com/arsalanbatuev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/arsalan-batuev-7065a6308/" target="_blank">LinkedIn</a>
+      </div>
+      <div class="contact-details">
+        <p>Phone: (647) 677-7331</p>
+        <p>Email: arsalan.batuev13@gmail.com</p>
+      </div>
+    </footer>
+
+    <!-- COPYRIGHT -->
+    <div id="copyright">
+      <ul>
+        <li>&copy; Arsalan Batuev</li>
+      </ul>
+    </div>
+
+  </div><!-- /#wrapper -->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
